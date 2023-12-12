@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from todo.views import get_todo_list
 
-#create your views here 
+#HERE CREATE 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', get_todo_list, name='hello'),
 ]
+
+os.environ.setdefault("DATABASE_URL", "postgres://ifmkltoa:OTabGbQPjqKTI7Gn5M2fMOrqNF")
